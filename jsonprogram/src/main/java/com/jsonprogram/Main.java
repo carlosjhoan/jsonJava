@@ -58,7 +58,7 @@ public class Main {
         }*/
 
         //System.out.println(myPerson.arrayInner);
-        String mensaje = "SoyDaniel";
+        String mensaje = "juanlopez";
         //String mensaje_2 = "SoyCamilo";
         byte [] msjByte = mensaje.getBytes(StandardCharsets.UTF_8);
         MessageDigest digest =  MessageDigest.getInstance("SHA-256");
@@ -104,12 +104,15 @@ public class Main {
               hexString_2.append('0');
             hexString_2.append(hex_2);
         }
+        
+        System.out.println("Contraseña entrante: " + hexString_2);
 
         if (hexString_2.toString().equals(hexString.toString())) {
             System.out.println("\nBIENVENIDO");
         } else {
             System.out.println("\nCONTRASEÑA INCORRECTA");
         }
+        
         
 
     }
